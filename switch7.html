@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang = "ko">
+<head>
+<meta charset="utf-8">
+<title>switch 조건문</title>
+	<script>
+		const rawInput = prompt('태어난 해를 립력해주세요','')
+		const year = Number(rawInput)
+		const e = year%12
+		
+		let result
+		if (e === 0) {reslut = '원숭이'}
+		else if (e === 1) {reslut = '닭'}
+		else if (e === 2) {reslut = '개'}
+		else if (e === 3) {reslut = '돼지'}
+		else if (e === 4) {reslut = '쥐'}
+		else if (e === 5) {reslut = '소'}
+		else if (e === 6) {reslut = '호랑이'}
+		else if (e === 7) {reslut = '토끼'}
+		else if (e === 8) {reslut = '용'}
+		else if (e === 9) {reslut = '뱀'}
+		else if (e === 10) {reslut = '말'}
+		else if (e === 11) {reslut = '양'}
+		alert('${year}년에 태어났으면 ${reslut}띠입니다.')
+	</script>
+</head>
+<body>
+
+</body>
+</html>

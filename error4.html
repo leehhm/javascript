@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang = "ko">
+<head>
+<meta charset="utf-8">
+<title>finally 구문 사용</title>
+	<script>
+		function text (){
+			try {
+				alert('A 위치입니다')
+				throw"예외 강제 발생"
+			} catch (exception) {
+				// TODO: handle exception
+				alert("B 위치입니다")
+				return
+			}
+			alert('C 위치입니다')
+		}
+		
+		test()
+	</script>
+</head>
+<body>
+
+</body>
+</html>

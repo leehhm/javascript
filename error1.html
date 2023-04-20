@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang = "ko">
+<head>
+<meta charset="utf-8">
+<title>기본 예외 처리</title>
+</head>
+<body>
+// <h1></h1>을 안써서 h1에 null이 들어감. 그래서 else가 호출!
+</body>
+	<script>
+		documnet.addEVentListener('DOMContentLoaded',()=>{
+			const h1 = document.querySelector('h1')
+			if (h1) {
+				h1.textContent = '안녕하세요'
+			} else {
+				console.log('h1 태그를 추출할 수 없습니다.')
+			}
+		})
+	</script>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang = "ko">
+<head>
+<meta charset="utf-8">
+<title>예외 객체</title>
+	<script>
+		try {
+			const array = new Array(99999999999999999999999999999)
+		} catch (exception) {
+			// TODO: handle exception
+			console.log(exception)
+			console.log()
+			console.log(`예외 이름 : ${exception.name}`)
+			console.log(`예외 메세지 : ${exception.message}`)
+		}
+	</script>
+</head>
+<body>
+
+</body>
+</html>

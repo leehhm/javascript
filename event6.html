@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang = "ko">
+<head>
+<meta charset="utf-8">
+<title>기본 이벤트 막기</title>
+	<script>
+		document.addEventListener('DOMContentLoeaded',()=>{
+			const imgs = document.querySelectorAll('img')
+			
+			imgs.forEach((img)=>{
+				img.addEventListemer('contextmenu',(event)=>{
+					event.preventDefault()
+				})
+			})
+		})
+	</script>
+</head>
+<body>
+	<img src = "http://placekitten.com/300/300" alt = "">
+</body>
+</html>

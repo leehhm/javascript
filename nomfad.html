@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang = "ko">
+<head>
+<meta charset="utf-8">
+<title>성적 계산기</title>
+	<script>
+		const students = []
+
+		while (true) {
+		const name = prompt('이름',"")
+		const num1 = Number(prompt('국어',""))
+		const num2 = Number(prompt('영어',""))
+		const num3 = Number(prompt('수학',""))
+		const num4 = Number(prompt('과학',""))
+		const trunon = confirm('끝?')
+		students.push({이름: name, 국어 : num1, 영어 : num2, 수학 : num3, 과학 : num4})
+		if (trunon === true) {
+			break;
+			}
+		}
+		for (const student of students) {
+			student.getSum = function (){
+				return this.국어 + this.영어 + this.수학 + this.과학
+			}
+			student.getAverage = function(){
+				return this.getSum()/4
+			}
+		}
+		let output = '이름\t총합\t평균\n'
+		for (const s of students) {
+			output += `${s.이름}\t${s.getSum()}점\t${s.getAverage()}점\n`
+		}
+		alert(JSON.stringify(students,null,2))
+		alert(output)
+	</script>
+</head>
+<body>
+
+</body>
+</html>
